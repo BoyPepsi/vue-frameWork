@@ -1,0 +1,70 @@
+.project-add-two {
+  width: 90%;
+  overflow: hidden;
+  .button-actions {
+    text-align: right;
+  }
+  .choice-tab {
+    span {
+      border: 1px solid #ddd;
+      padding: 5px 20px;
+      margin-right: 15px;
+      display: inline-block;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+      height: 30px;
+      line-height: 30px;
+    }
+    span.active {
+      background-color: $blue;
+      color: #fff;
+      border: 0;
+    }
+  }
+}
+.table {
+  margin-top: 30px;
+}
+/deep/ .el-table .cell {
+  text-align: center;
+  font-size: 14px;
+}
+
+/deep/ .el-input-group__prepend {
+  background-color: transparent;
+  border-left: 0;
+  border-top: 0;
+  border-bottom: 0;
+}
+.for-form {
+  .unit-form-item {
+    margin-top: 20px;
+  }
+}
+.delete-item {
+  line-height: 40px;
+  color: $red;
+  font-size: 20px;
+}
+.confirm-button-actions {
+  text-align: center;
+  margin-top: 60px;
+  border-top: 1px solid #ddd;
+  padding: 40px 0 10px 0;
+  button{
+    margin-right: 40px;
+    padding: 15px 40px;
+  }
+}
+.confirm-title {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  overflow: hidden;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.el-icon-circle-close {
+  cursor: pointer;
+}

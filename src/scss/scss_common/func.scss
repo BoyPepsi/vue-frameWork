@@ -1,0 +1,58 @@
+/**
+  ** 定义padding 和 border
+  **/
+@mixin paddingAndBorder($vert, $value: 0, $borderColor: transparent, $borderWidth: 0) {
+  padding-#{$vert}: $value;
+  @if $borderColor {
+    border-#{$vert}: $borderWidth solid $borderColor;
+  } @else {
+    border: none;
+  }
+}
+/**
+  ** 定义宽度和高度
+  **/
+@mixin windthAndHeight($width: 0px, $height: 0px) {
+  width: $width;
+  height: $height;
+}
+
+/**
+** 水平，垂直居中
+**/
+@mixin center($width: null, $height: null) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  @if $width and $height {
+    width: $width;
+    height: $height;
+    margin-top: -($height / 2);
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: -($width / 2);
+  } @else if not $width and not $height {
+    transform: translate(-50%, -50);
+  } @else if not $width {
+    height: $height;
+    margin-top: -(height / 2);
+    transform: translateX(-50%);
+  } @else {
+    width: $width;
+    margin-top: -(width / 2);
+    transform: translateY(-50%);
+  }
+}
+
+/**
+  ** 基本样式
+  **/
+  @mixin baseStyle($width: 0px, $height: auto, $float : none, $textAlgin : auto, $fontSize : 14px, $lineHeight : 30px, $color : #333) {
+    width: $width;
+    height: $height;
+    float: $float;
+    text-align: $textAlgin;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    color: $color;
+  }

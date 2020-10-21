@@ -1,0 +1,13 @@
+.table-list {
+  @include windthAndHeight(100%, auto);
+  margin-top: 30px;
+  overflow: hidden;
+  text-align: center;
+}
+.right-button {
+  text-align: right;
+}
+/deep/ .el-table .cell {
+  text-align: center;
+  font-size: 14px;
+}

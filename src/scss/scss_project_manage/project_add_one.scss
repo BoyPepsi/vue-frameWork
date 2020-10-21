@@ -1,0 +1,12 @@
+.form {
+  width: 90%;
+  overflow: hidden;
+}
+.fix-bottom {
+  position: fixed;
+  bottom: 0;
+  width: calc(90% - 120px);
+  height: 90px;
+  text-align: center;
+  line-height: 90px;
+}

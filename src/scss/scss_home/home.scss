@@ -1,0 +1,35 @@
+#indexPage {
+  width: 100%;
+  .header{
+    background-color: $header_bg;
+  }
+}
+.left-side {
+  width: 220px !important;
+  height: calc(100% - 80px);
+  // text-align: center;
+  background-color: #324257;
+}
+.main-content {
+  width: calc(100% - 260px);
+  text-align: left;
+  overflow: hidden;
+  @include paddingAndBorder(right, 40px);
+  overflow: hidden;
+  .header {
+    height: 60px;
+    background: rgba($header_bg, $header_bg_alpha);
+  }
+  .container {
+    height: calc(100vh - 60px);
+    .left-side {
+      width: 200px !important;
+      background: $aside_bg;
+      overflow: hidden;
+    }
+  }
+}
+// 消除导航栏 侧边
+/deep/ .el-menu {
+  border: none;
+}

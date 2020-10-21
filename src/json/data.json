@@ -1,0 +1,16 @@
+{
+  "projectTypeList": [
+    {
+      "value": "1",
+      "name": "住宅建筑"
+    },
+    {
+      "value": "2",
+      "name": "商业建筑"
+    },
+    {
+      "value": "3",
+      "name": "公共建筑"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+#loginPage {
+  width: 100%;
+  height: 100vh;
+  background-image: url("~@/assets/images/login_bg.jpg");
+  background-size: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+}
+.login-class {
+  padding-top: 20px;
+  position: absolute;
+  right: 160px;
+  top: 50%;
+  width: 350px;
+  transform: translateY(-60%);
+  border-radius: 5px;
+  background: #fff;
+  overflow: hidden;
+  .ms-title {
+    border-bottom: 1px solid #e8eaec;
+    padding: 14px 16px;
+    line-height: 1;
+  }
+  .ms-content {
+    padding: 30px 30px;
+  }
+}
+.login-btn {
+  text-align: center;
+  button {
+    width: 100%;
+    height: 36px;
+    margin-bottom: 10px;
+  }
+}
+.remeberme-box{
+  margin-bottom: 10px;
+}

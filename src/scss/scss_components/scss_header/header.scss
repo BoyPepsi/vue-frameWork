@@ -1,0 +1,54 @@
+#headers {
+  font-size: 22px;
+  color: #fff;
+  background-color: $header_bg;
+  line-height: 60px;
+
+  .brand {
+    float: left;
+    margin-left: 20px;
+  }
+  .header-right {
+    float: right;
+  }
+  .btn-fullscreen {
+    transform: rotate(45deg);
+    margin-right: 5px;
+    font-size: 24px;
+    cursor: pointer;
+    float: left;
+  }
+  .user-avator {
+    margin-left: 20px;
+    float: left;
+    img {
+      display: block;
+      width: 40px;
+      height: 40px;
+      margin-top: 10px;
+      border-radius: 50%;
+    }
+  }
+  .user-name{
+    margin-left: 15px;
+    margin-right: 60px;
+    float: right;
+    .el-dropdown-link{
+      color: white;
+      cursor: pointer;
+    }
+  }
+  .dropdown{
+    width: 200px;
+  }
+}
+.el-dropdown-link {
+  color: #fff;
+  cursor: pointer;
+}
+.el-dropdown-menu__item {
+  text-align: center;
+}
+.el-menu-vertical-demo{
+  overflow: hidden;
+}
